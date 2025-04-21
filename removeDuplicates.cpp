@@ -14,4 +14,19 @@ public:
         nums = keys;
         return keys.size();
     }
+
+     int removeDuplicates(vector<int>& nums) {
+            vector<int>::iterator it = unique(nums.begin(), nums.end());
+            vector<int>::iterator it2 = nums.begin();
+            
+            int k = 0;
+            while(it2 != it)
+            {
+                it2++;
+                k++;   
+            }
+    
+        return k;
+        }
+
 };
